@@ -12,3 +12,5 @@ for n in range(len(measurements) - 3):
     if sum(measurements[n+1:n+4]) > sum(measurements[n:n+3]):
         increases += 1
 ```
+
+* when dynamically iterating over a list, it's not a good idea to change it - better to use an additional list and then to extend it
